@@ -18,7 +18,10 @@
     "workspaceMount": "source=${localWorkspaceFolder},target=${localEnv:HOME}/glue-vscode,type=bind,consistency=cached",
     "workspaceFolder": "${localEnv:HOME}/glue-vscode",
     "forwardPorts": [4040],
-    "mounts": ["source=${localEnv:HOME}/.aws,target=${localEnv:HOME}/.aws,type=bind,consistency=cached"],
+    "mounts": [
+      "source=${localEnv:HOME}/.aws,target=${localEnv:HOME}/.aws,type=bind,consistency=cached",
+      "source=${localEnv:HOME}/.ssh,target=${localEnv:HOME}/.ssh,type=bind,consistency=cached"
+    ],
     "settings": {
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "esbenp.prettier-vscode",
