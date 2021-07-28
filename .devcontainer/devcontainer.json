@@ -19,7 +19,7 @@
   "workspaceFolder": "${localEnv:HOME}/glue-vscode",
   "forwardPorts": [4040],
   "mounts": [
-    "source=${localEnv:HOME}/.aws,target=${localEnv:HOME}/.aws,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.aws,target=/root/.aws,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.ssh,target=${localEnv:HOME}/.ssh,type=bind,consistency=cached"
   ],
   "settings": {
