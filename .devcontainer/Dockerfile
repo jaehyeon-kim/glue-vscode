@@ -28,7 +28,7 @@ RUN apt-get update \
 RUN python3.7 -m venv /root/venv
 
 COPY ./3.7 /tmp/3.7
-RUN /root/venv/bin/pip install -r /temp/3.7/dev.txt
+RUN /root/venv/bin/pip install -r /tmp/3.7/dev.txt
 
 ## Copy pytest execution script to /aws-glue-libs/bin
 ## in order to run pytest from the virtual env
