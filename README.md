@@ -8,6 +8,5 @@ Glue local development environment with Docker and vscode
 - [x] - Connect to Data Catalog and S3
 - [x] - [Python Samples](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-samples.html)
 - [x] - Testing
-- [ ] - Glue 2.0 config with virtual environment
-- [ ] - Docker Compose
+- [x] - Glue 2.0 config with virtual environment
 - [ ] - Jupyter Notebook
