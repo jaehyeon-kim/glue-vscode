@@ -6,10 +6,10 @@ if [ -z "$use_venv" ]; then
 else
   pypsark_python=/root/venv/bin/python
 fi
-echo pyspark python - $pypsark_python
+echo "pyspark python - $pypsark_python"
 
 execution=$1
-echo $execution
+echo "execution - $execution"
 
 ## remove first argument
 shift 1
@@ -25,7 +25,7 @@ elif [ $execution == 'pytest' ]; then
 elif [ $execution == 'pytest2' ]; then
   sudo su -c "PYSPARK_PYTHON=$pypsark_python /home/aws-glue-libs/bin/gluepytest2 $@"
 else
-  echo unsupport execution
+  echo "unsupported execution - $execution"
   exit 1
 fi
 
